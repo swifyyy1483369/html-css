@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: burger;
+    src: url(../fonts/EducationalGothic-Regular.otf);
+}
+
+body{
+    background-color: blueviolet;
+    font-family: burger;
+}
+main{
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.photo{
+    width: calc(50% - 40px);
+    height: calc((35vw - 40px)/16*9);
+    margin: 10px;
+    background-color: bisque;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s ease-in;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
+
+}
+.photo:hover{
+    transform: rotate(3deg)scale(1.07);
+}
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+.photo1{
+    background-image: url(../img/img1.jpeg);
+
+}
